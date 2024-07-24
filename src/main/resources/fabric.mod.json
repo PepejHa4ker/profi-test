@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "profi-test",
+  "version": "${version}",
+  "name": "ProfiTest",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/pepej/profi-test"
+  },
+  "license": "Apache-2.0",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.pepej.profitest.client.ProfiTestClient"
+    ],
+    "main": [
+      "com.pepej.profitest.ProfiTest"
+    ]
+  },
+  "mixins": [
+    "profi-test.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
